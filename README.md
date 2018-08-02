@@ -10,42 +10,44 @@ https://api.myjson.com/bins/nl35k
 https://api.myjson.com/bins/o8nx4
 
 
-Byte 1
-Create .gitignore file and add .sh or .bat file (mac or windows )
+###### Byte 1
+
+* Create .gitignore file and add .sh or .bat file (mac or windows )
 Run the script. 
 
 
-Byte 2
-create-react-app will be globally be installed and geekabyte-workshop folder will be create with minimal react boilerplate setup
+###### Byte 2
 
-Byte 3 
+* create-react-app will be globally be installed and geekabyte-workshop folder will be create with minimal react boilerplate setup
 
-Byte 4
+###### Byte 3 
 
-Byte 5
+###### Byte 4
 
-Byte 6
+###### Byte 5
 
-Byte 7
+###### Byte 6
 
-Byte 8
+###### Byte 7
 
-Byte 9
+###### Byte 8
 
-Byte 10
+###### Byte 9
 
-Byte 11
+###### Byte 10
 
-Byte 12
+###### Byte 11
 
-Byte 13
+###### Byte 12
 
-Byte 14
+###### Byte 13
 
-Byte 15
+###### Byte 14
 
-Byte 16
+###### Byte 15
 
-Byte 17
+###### Byte 16
+
+###### Byte 17
 
 
