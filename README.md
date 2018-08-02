@@ -12,7 +12,7 @@ https://api.myjson.com/bins/o8nx4
 
 ###### Byte 1
 
-* Create .gitignore file and add .sh or .bat file (mac or windows )
+* Create .gitignore file and add start.sh or start.bat file (mac or windows )
 Run the script. 
 
 
