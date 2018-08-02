@@ -1,6 +1,8 @@
 import React, { Component } from "react"
 import logo from "./logo.svg"
 import "./App.css"
+import axios from "axios" 
+import { nowShowingUrl, topRatedUrl } from "./api/apiConfig"
 
 // file imports
 import Tabbar from "./movie-island/Tabbar"
@@ -14,7 +16,8 @@ class App extends Component {
 	}
 
 	onTabSelected(selectedType) {
-		console.log("selected type ", selectedType)
+		axios.get(nowShowingUrl)
+		axios.get(topRatedUrl)
 	}
 
 	render() {
