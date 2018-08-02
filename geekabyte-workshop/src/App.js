@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+// file imports
+import Tabbar from "./movie-island/Tabbar"
 
 class App extends Component {
 
