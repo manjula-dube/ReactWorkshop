@@ -15,7 +15,7 @@ class App extends Component {
 		// Bind events
 		this.onTabSelected = this.onTabSelected.bind(this)
     this.state = {
-			selectedType: "now_showing",
+			selectedType: "now_showing"
 		}
 	}
 
@@ -51,6 +51,7 @@ class App extends Component {
 
 	render() {
     const { selectedType } = this.state
+    console.log(selectedType)
 		const { nowShowing, topRated } = this.state
 		return (
 			<div className="App">
@@ -59,7 +60,7 @@ class App extends Component {
 					<img src={logo} className="App-logo" alt="logo" />
 				</header>
 				<p className="App-intro">Click on the Following Tabs</p>
-				<Tabbar onTabSelected={this.onTabSelected} />
+				<Tabbar onTabSelected={this.onTabSelected} selectedType={selectedType}/>
         {selectedType === "now_showing" && nowShowing && <List data={nowShowing} />}
 				{selectedType === "top_rated" && topRated && <List data={topRated} />}
 			</div>
