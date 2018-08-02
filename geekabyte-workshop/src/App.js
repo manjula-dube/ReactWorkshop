@@ -1,49 +1,23 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react"
+import logo from "./logo.svg"
+import "./App.css"
+
 // file imports
 import Tabbar from "./movie-island/Tabbar"
 
 class App extends Component {
-
-  constructor(props) {
-		super(props)
-
-		// bind events
-		this.onTabChange = this.onTabChange.bind(this)
-
-		// initial state
-		this.state = { selectedType: "now_showing" }
+	render() {
+		return (
+			<div className="App">
+				<header className="App-header">
+					<h1 className="App-title">Welcome to Movie-island</h1>
+					<img src={logo} className="App-logo" alt="logo" />
+				</header>
+				<p className="App-intro">Click on the Following Tabs</p>
+				<Tabbar />
+			</div>
+		)
 	}
-
-	onTabChange(event) {
-		const selectedType = event.target.getAttribute("data-type")
-		this.setState({
-			selectedType
-      // No need of writing selectedType : selectedType
-      // ES6 syntax
-		})
-	}
-
-  render() {
-    const { selectedType } = this.state,
-			isNowShowingSelected = selectedType === "now_showing",
-			isTopRatedSelected = selectedType === "top_rated"
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Changed text</h1>
-        </header>
-        <p className="App-intro">Click on the Following Tabs</p>
-				<div>
-					<span data-type="now_showing" onClick={this.onTabChange} className={`tab ${isNowShowingSelected ? "selected" : ""}`}>Now Showing</span>
-					<span data-type="top_rated" onClick={this.onTabChange} className={`tab ${isTopRatedSelected ? "selected" : ""}`}>Top Rated</span>
-				</div>
-        <Tabbar/>
-      </div>
-    );
-  }
 }
 
-export default App;
+export default App
