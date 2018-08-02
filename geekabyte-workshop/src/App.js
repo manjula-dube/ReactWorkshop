@@ -59,7 +59,7 @@ class App extends Component {
 					<img src={logo} className="App-logo" alt="logo" />
 				</header>
 				<p className="App-intro">Click on the Following Tabs</p>
-				<Tabbar onTabSelected={this.onTabSelected} />
+				<Tabbar onTabSelected={this.onTabSelected} selectedType={selectedType}/>
         {selectedType === "now_showing" && nowShowing && <List data={nowShowing} />}
 				{selectedType === "top_rated" && topRated && <List data={topRated} />}
 			</div>
