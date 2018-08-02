@@ -19,10 +19,20 @@ class App extends Component {
 		// AJAX call to get the API response
 		switch (selectedType) {
 			case "now_showing":
-				axios.get(nowShowingUrl)
+				axios.get(nowShowingUrl).then(response => {
+					this.setState({
+						nowShowing: response.data.results,
+						selectedType,
+					})
+				})
 				break
 			case "top_rated":
-				axios.get(topRatedUrl)
+				axios.get(topRatedUrl).then(response => {
+					this.setState({
+						topRated: response.data.results,
+						selectedType,
+					})
+				})
 				break
 		}
 	}
