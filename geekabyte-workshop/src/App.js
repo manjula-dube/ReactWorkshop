@@ -6,6 +6,7 @@ import { nowShowingUrl, topRatedUrl } from "./api/apiConfig"
 
 // file imports
 import Tabbar from "./movie-island/Tabbar"
+import List from "./movie-island/List"
 
 class App extends Component {
 	constructor(props) {
@@ -37,6 +38,8 @@ class App extends Component {
 				</header>
 				<p className="App-intro">Click on the Following Tabs</p>
 				<Tabbar onTabSelected={this.onTabSelected} />
+        {selectedType === "now_showing" && nowShowing && <List data={nowShowing} />}
+				{selectedType === "top_rated" && topRated && <List data={topRated} />}
 			</div>
 		)
 	}
