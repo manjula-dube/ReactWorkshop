@@ -12,7 +12,8 @@ class App extends Component {
 	}
 
 	onTabChange(event) {
-		console.log("tab clicked ", event)
+		const selectedType = event.target.getAttribute("data-type")
+		console.log("tab clicked ", selectedType)
 	}
 
   render() {
@@ -24,8 +25,8 @@ class App extends Component {
         </header>
         <p className="App-intro">Click on the Following Tabs</p>
 				<div>
-					<span onClick={this.onTabChange} className="tab">Now Showing</span>
-					<span onClick={this.onTabChange} className="tab">Top Rated</span>
+					<span data-type="now_showing" onClick={this.onTabChange} className="tab">Now Showing</span>
+					<span data-type="top_rated" onClick={this.onTabChange} className="tab">Top Rated</span>
 				</div>
       </div>
     );
