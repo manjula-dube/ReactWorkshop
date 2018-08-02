@@ -3,6 +3,18 @@ import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
+
+  constructor(props) {
+		super(props)
+
+		// bind events
+		this.onTabChange = this.onTabChange.bind(this)
+	}
+
+	onTabChange(event) {
+		console.log("tab clicked ", event)
+	}
+
   render() {
     return (
       <div className="App">
@@ -12,8 +24,8 @@ class App extends Component {
         </header>
         <p className="App-intro">Click on the Following Tabs</p>
 				<div>
-					<span className="tab">Now Showing</span>
-					<span className="tab">Top Rated</span>
+					<span onClick={this.onTabChange} className="tab">Now Showing</span>
+					<span onClick={this.onTabChange} className="tab">Top Rated</span>
 				</div>
       </div>
     );
