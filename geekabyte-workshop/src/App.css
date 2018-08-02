@@ -1,28 +1,125 @@
 .App {
-  text-align: center;
+	text-align: center;
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+	animation: App-logo-spin infinite 20s linear;
+	height: 80px;
 }
 
 .App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+	background-color: #c02c39;
+	color: white;
+	padding: 1px;
 }
 
 .App-title {
-  font-size: 1.5em;
+	font-size: 1.5em;
 }
 
 .App-intro {
-  font-size: large;
+	font-size: large;
+}
+
+.tab {
+	padding: 5px 15px;
+	color: #c02c39;
+	border: 1px solid gray;
+	cursor: pointer;
+}
+
+.tab.selected {
+	color: white;
+	background: #c02c39;
+	border: 0px;
+}
+
+.card {
+	-webkit-box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.1);
+	box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.1);
+	background-color: #fff;
+	border-radius: 4px;
+	margin-bottom: 25px;
+	text-align: left;
+}
+
+.card-detail {
+	position: relative;
+	text-align: left;
+	padding: 10px;
+	display: table-cell;
+	vertical-align: top;
+	line-height: 1.4;
+	color: #333;
+}
+
+.card-title {
+	font-size: 19px;
+	font-weight: 600;
+	color: #cb202d;
+}
+
+.card-lang {
+	color: #89959b;
+}
+
+.card-vote img {
+	width: 18px;
+	margin-right: 4px;
+}
+
+.card .img-container {
+	height: 190px;
+	display: table-cell;
+	padding: 10px;
+}
+
+.card .img-container img {
+	width: 150px;
+	height: 100%;
+	display: block;
+}
+
+.card-detail span {
+	display: block;
+}
+
+.container {
+	max-width: 1366px;
+	margin: 0 auto;
+	padding: 72px 96px;
+	position: relative;
+}
+
+.show-more {
+	text-decoration: underline;
+	cursor: pointer;
 }
 
 @keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+@media only screen and (max-width: 576px) {
+	.container {
+		padding: 0 10px;
+	}
+	.card {
+		margin: 17px;
+	}
+	.card .img-container {
+		display: block;
+	}
+	.card-detail {
+		display: block;
+	}
+	.card .img-container img {
+		margin: 0 auto;
+	}
 }

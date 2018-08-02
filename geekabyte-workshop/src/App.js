@@ -10,8 +10,8 @@ class App extends Component {
 		// bind events
 		this.onTabChange = this.onTabChange.bind(this)
 
-    // initial state
-		this.state = {}
+		// initial state
+		this.state = { selectedType: "now_showing" }
 	}
 
 	onTabChange(event) {
@@ -20,6 +20,9 @@ class App extends Component {
 	}
 
   render() {
+    const { selectedType } = this.state,
+			isNowShowingSelected = selectedType === "now_showing",
+			isTopRatedSelected = selectedType === "top_rated"
     return (
       <div className="App">
         <header className="App-header">
@@ -28,8 +31,8 @@ class App extends Component {
         </header>
         <p className="App-intro">Click on the Following Tabs</p>
 				<div>
-					<span data-type="now_showing" onClick={this.onTabChange} className="tab">Now Showing</span>
-					<span data-type="top_rated" onClick={this.onTabChange} className="tab">Top Rated</span>
+					<span data-type="now_showing" onClick={this.onTabChange} className={`tab ${isNowShowingSelected ? "selected" : ""}`}>Now Showing</span>
+					<span data-type="top_rated" onClick={this.onTabChange} className={`tab ${isTopRatedSelected ? "selected" : ""}`}>Top Rated</span>
 				</div>
       </div>
     );
