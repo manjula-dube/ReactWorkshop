@@ -10,7 +10,7 @@ class TabBar extends Component {
 		this.onTabChange = this.onTabChange.bind(this)
 
 		// initial state
-		this.state = { selectedType: "now_showing" }
+		this.state = { selectedType: this.props.selectedType }
 	}
 
 	onTabChange(event) {
