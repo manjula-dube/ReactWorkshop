@@ -2,9 +2,21 @@
 
 We will go branch by branch to see what happening :)
 
+If the api doesn't work (Limit might exceed) we can use the following
+#### now showing
+https://api.myjson.com/bins/nl35k
+
+#### top rated
+https://api.myjson.com/bins/o8nx4
+
+
 Byte 1
+Create .gitignore file and add .sh or .bat file (mac or windows )
+Run the script. 
+
 
 Byte 2
+create-react-app will be globally be installed and geekabyte-workshop folder will be create with minimal react boilerplate setup
 
 Byte 3 
 
