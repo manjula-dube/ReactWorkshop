@@ -14,10 +14,20 @@ class App extends Component {
 
 		// Bind events
 		this.onTabSelected = this.onTabSelected.bind(this)
-    this.state = {}
+    this.state = {
+			selectedType: "now_showing",
+		}
+	}
+
+  componentDidMount() {
+		this.fetchData(this.state.selectedType)
 	}
 
 	onTabSelected(selectedType) {
+		this.fetchData(selectedType)
+	}
+
+	fetchData(selectedType) {
 		// AJAX call to get the API response
 		switch (selectedType) {
 			case "now_showing":
@@ -38,7 +48,6 @@ class App extends Component {
 				break
 		}
 	}
-
 
 	render() {
     const { selectedType } = this.state
