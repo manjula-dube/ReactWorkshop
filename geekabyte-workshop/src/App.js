@@ -10,9 +10,11 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Changed text</h1>
         </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <p className="App-intro">Click on the Following Tabs</p>
+				<div>
+					<span className="tab">Now Showing</span>
+					<span className="tab">Top Rated</span>
+				</div>
       </div>
     );
   }
