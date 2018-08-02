@@ -19,6 +19,11 @@ class TabBar extends Component {
 		this.setState({
 			selectedType, // No need of writing selectedType : selectedType // ES6 syntax
 		})
+
+		// Let the parent know about the changes
+		if (this.props.onTabSelected) {
+			this.props.onTabSelected(selectedType)
+		}
 	}
 
 	render() {
