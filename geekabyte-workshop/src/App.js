@@ -16,9 +16,17 @@ class App extends Component {
 	}
 
 	onTabSelected(selectedType) {
-		axios.get(nowShowingUrl)
-		axios.get(topRatedUrl)
+		// AJAX call to get the API response
+		switch (selectedType) {
+			case "now_showing":
+				axios.get(nowShowingUrl)
+				break
+			case "top_rated":
+				axios.get(topRatedUrl)
+				break
+		}
 	}
+
 
 	render() {
 		return (
