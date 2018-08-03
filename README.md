@@ -235,7 +235,7 @@ return (
 )
 
 ```
-Card here is a component craeted:
+Card here is a component created:
 
 
 ###### Byte 14
