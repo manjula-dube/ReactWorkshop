@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+import Card from "./Card"
 
 class List extends Component {
 	render() {
@@ -10,7 +11,7 @@ class List extends Component {
 		return (
 			<div className="container">
 				{data.map((item, index) => {
-					return <li key={index}> {JSON.stringify(item)} </li>
+					return <Card key={index} data={item}/>
 				})}
 			</div>
 		)
