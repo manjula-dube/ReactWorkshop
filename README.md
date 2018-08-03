@@ -22,9 +22,43 @@ Run the script.
 
 ###### Byte 3 
 
+* Add logo and change the text to see hot module reloading
+
 ###### Byte 4
 
+* Add tabs 
+
+```
+<p className="App-intro">Click on the Following Tabs</p>
+<div>
+  <span className="tab">Now Showing</span>
+  <span className="tab">Top Rated</span>
+</div>
+
+```
+
 ###### Byte 5
+
+Add constructor, Add on click, bind the onClick in constructor, Attach attribute to identify which tab is clicked
+
+```
+constructor(props) {
+  super(props)
+
+  // bind events
+  this.onTabChange = this.onTabChange.bind(this)
+}
+
+onTabChange(event) {
+  const selectedType = event.target.getAttribute("data-type")
+  console.log("tab clicked ", selectedType)
+}
+  
+* HTML
+
+<span data-type="now_showing" onClick={this.onTabChange} className="tab">Now Showing</span>
+<span data-type="top_rated" onClick={this.onTabChange} className="tab">Top Rated</span>
+```
 
 ###### Byte 6
 
