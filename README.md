@@ -255,6 +255,8 @@ this.state = { selectedType: this.props.selectedType }
 
 ###### Byte 16
 
+Show more feature. PLEASE IMPLEMENT IT AS HOMEWORK
+
 ###### Byte 17
 
 
