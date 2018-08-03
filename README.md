@@ -259,6 +259,6 @@ Show more feature. PLEASE IMPLEMENT IT AS HOMEWORK
 
 ###### Byte 17
 
-Default tab should ne now showig and make and API call on componentDidMount for intial load of now showing data
+Default tab should ne now showing and make and API call on componentDidMount for intial load of now showing data
 
 
