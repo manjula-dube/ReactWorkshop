@@ -142,9 +142,18 @@ import Tabbar from "./movie-island/Tabbar"
 
 * Bubble up the event to the parent and Add API request using axios, make sure you have axios installed :)
 
+Add ApiConfig.js where we have api end points
+
+```
+const secret = "6431579d356b75728144f5d6ce38ad9a"
+
+export const nowShowingUrl = `https://api.themoviedb.org/3/movie/now_playing?api_key=${secret}&language=en-IN&page=1`
+
+export const topRatedUrl = `https://api.themoviedb.org/3/movie/top_rated?api_key=${secret}&language=en-IN&page=1`
 ```
 In App.js since its a parent 
 
+```
 constructor(props) {
 
    super(props)
@@ -157,13 +166,15 @@ onTabSelected(selectedType) {
   axios.get(topRatedUrl)
 }
 
+```
 In the render method add onTabSelected as property
 
+```
 <Tabbar onTabSelected={this.onTabSelected} />
 
 ```
 
-In Tabbar.js 
+In Tabbar.js to let the parent know about what happening with the children
 
 ```
 onTabChange(event) {
