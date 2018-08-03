@@ -101,6 +101,15 @@ const { selectedType } = this.state,
 
 ###### Byte 8
 
+* Set state to reflect selected tab type
+
+// No need of writing selectedType : selectedType
+// ES6 syntax
+```
+this.setState({selectedType})
+
+```
+
 ###### Byte 9
 
 ###### Byte 10
