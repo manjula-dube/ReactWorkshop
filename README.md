@@ -136,8 +136,10 @@ import Tabbar from "./movie-island/Tabbar"
 ```
 
 ###### Byte 10
+* Move Tabbar in seperate component & import in the App.js
 
 ###### Byte 11
+
 
 ###### Byte 12
 
