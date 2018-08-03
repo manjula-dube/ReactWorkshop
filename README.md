@@ -215,9 +215,11 @@ onTabSelected(selectedType) {
 
 
 ```
+###### Byte 13.1
+* Render the JSON data of each card using list component
 
+Create List.js and show the data on the screen and make sure you add state in the App.js file
 
-###### Byte 12
 
 ###### Byte 14
 
