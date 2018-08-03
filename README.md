@@ -111,6 +111,29 @@ this.setState({selectedType})
 ```
 
 ###### Byte 9
+* See how File import works, Create a file Tabbar.js inside movie-island folder 
+
+```
+import React, { Component } from "react"
+
+// TabBar component renders Types of list to be rendered,
+// Whether list if for now showing or top rated movies
+class TabBar extends Component {
+	render() {
+		return <h1> Tabbar </h1>
+	}
+}
+
+export default TabBar
+
+```
+
+And in App.js import the file
+
+```
+import Tabbar from "./movie-island/Tabbar"
+
+```
 
 ###### Byte 10
 
