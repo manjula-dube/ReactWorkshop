@@ -220,6 +220,23 @@ onTabSelected(selectedType) {
 
 Create List.js and show the data on the screen and make sure you add state in the App.js file
 
+###### Byte 13.2
+Create a card component pass data as prop to it and instead li make a card that iterates through the list
+
+In List.js
+
+```
+return (
+<div className="container">
+	{data.map((item, index) => {
+		return <Card key={index} data={item}/>
+	})}
+</div>
+)
+
+```
+Card here is a component craeted:
+
 
 ###### Byte 14
 
