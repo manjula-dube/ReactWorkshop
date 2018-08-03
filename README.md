@@ -58,10 +58,11 @@ onTabChange(event) {
 
 <span data-type="now_showing" onClick={this.onTabChange} className="tab">Now Showing</span>
 <span data-type="top_rated" onClick={this.onTabChange} className="tab">Top Rated</span>
+
 ```
 
 ###### Byte 6
-Define Intial State
+* Define Intial State
 
 ```
 constructor(props) {
@@ -73,9 +74,30 @@ constructor(props) {
   // initial state
   this.state = {}
 }
+
 ```
 
 ###### Byte 7
+
+* Now Showing as default selected
+
+```
+// initial state in constructor
+this.state = { selectedType: "now_showing" }
+
+Inside render method 
+
+const { selectedType } = this.state,
+			isNowShowingSelected = selectedType === "now_showing",
+			isTopRatedSelected = selectedType === "top_rated"
+      
+      
+<div>
+  <span data-type="now_showing" onClick={this.onTabChange} className={`tab ${isNowShowingSelected ? "selected" : ""}`}>Now Showing</span>
+	<span data-type="top_rated" onClick={this.onTabChange} className={`tab ${isTopRatedSelected ? "selected" : ""}`}>Top Rated</span>
+</div>      
+
+```
 
 ###### Byte 8
 
