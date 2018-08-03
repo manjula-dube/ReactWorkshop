@@ -186,10 +186,38 @@ onTabChange(event) {
 
 ```
 
+###### Byte 13
+
+Save response in App State 
+
+```
+onTabSelected(selectedType) {
+	// AJAX call to get the API response
+	switch (selectedType) {
+		case "now_showing":
+			axios.get(nowShowingUrl).then(response => {
+				this.setState({
+					nowShowing: response.data.results,
+					selectedType,
+				})
+			})
+			break
+		case "top_rated":
+			axios.get(topRatedUrl).then(response => {
+				this.setState({
+					topRated: response.data.results,
+					selectedType,
+				})
+			})
+			break
+	}
+}
+
+
+```
+
 
 ###### Byte 12
-
-###### Byte 13
 
 ###### Byte 14
 
