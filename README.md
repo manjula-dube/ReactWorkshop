@@ -140,7 +140,40 @@ import Tabbar from "./movie-island/Tabbar"
 
 ###### Byte 11
 
-* Bubble up the event to the parent 
+* Bubble up the event to the parent and Add API request using axios, make sure you have axios installed :)
+
+```
+In App.js since its a parent 
+
+constructor(props) {
+
+   super(props)
+   // Bind events
+   this.onTabSelected = this.onTabSelected.bind(this)
+}
+
+onTabSelected(selectedType) {
+  axios.get(nowShowingUrl)
+  axios.get(topRatedUrl)
+}
+
+In the render method add onTabSelected as property
+
+<Tabbar onTabSelected={this.onTabSelected} />
+
+```
+
+In Tabbar.js 
+
+```
+onTabChange(event) {
+  // Let the parent know about the changes
+  if (this.props.onTabSelected) {
+    this.props.onTabSelected(selectedType)
+  }
+}
+
+```
 
 
 ###### Byte 12
