@@ -10,14 +10,6 @@ const langMap = {
 class Card extends Component {
 	constructor() {
 		super()
-		this.state = { showMore: true }
-		this.CHAR_LIMIT = 200
-
-		this.onShowMoreClick = this.onShowMoreClick.bind(this)
-	}
-
-	onShowMoreClick() {
-		this.setState(prevState => ({ showMore: !prevState.showMore }))
 	}
 
 	render() {
@@ -26,9 +18,6 @@ class Card extends Component {
 		if (!data) {
 			return
 		}
-
-		const { CHAR_LIMIT } = this
-		const { showMore } = this.state
 
 		return (
 			<div className="card">
