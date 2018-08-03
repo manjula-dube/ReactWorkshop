@@ -140,6 +140,8 @@ import Tabbar from "./movie-island/Tabbar"
 
 ###### Byte 11
 
+* Bubble up the event to the parent 
+
 
 ###### Byte 12
 
