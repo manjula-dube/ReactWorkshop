@@ -239,8 +239,19 @@ Card here is a component created:
 
 
 ###### Byte 14
+Every one at the same level
+
 
 ###### Byte 15
+
+Segeregate data fetching, default selected tab flows from parent
+
+// initial state
+
+```
+this.state = { selectedType: this.props.selectedType }
+
+```
 
 ###### Byte 16
 
