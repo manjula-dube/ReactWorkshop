@@ -61,6 +61,19 @@ onTabChange(event) {
 ```
 
 ###### Byte 6
+Define Intial State
+
+```
+constructor(props) {
+  super(props)
+
+  // bind events
+  this.onTabChange = this.onTabChange.bind(this)
+
+  // initial state
+  this.state = {}
+}
+```
 
 ###### Byte 7
 
