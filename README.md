@@ -28,7 +28,7 @@ Here's the logo [ link ](https://raw.githubusercontent.com/manjula91/ReactWorksh
 
 ###### Byte 4
 
-* Add tabs 
+* Add tabs and replace your App.css file Here's the (link)[https://raw.githubusercontent.com/manjula91/ReactWorkshop/byte17/geekabyte-workshop/src/App.css]
 
 ```
 <p className="App-intro">Click on the Following Tabs</p>
