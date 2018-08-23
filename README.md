@@ -24,6 +24,8 @@ Run the script.
 
 * Add logo and change the text to see hot module reloading
 
+Here's the logo [ link ](https://github.com/manjula91/ReactWorkshop/blob/byte3/geekabyte-workshop/src/logo.svg)
+
 ###### Byte 4
 
 * Add tabs 
