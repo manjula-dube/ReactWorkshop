@@ -24,7 +24,7 @@ Run the script.
 
 * Add logo and change the text to see hot module reloading
 
-Here's the logo [ link ](https://github.com/manjula91/ReactWorkshop/blob/byte3/geekabyte-workshop/src/logo.svg)
+Here's the logo [ link ](https://raw.githubusercontent.com/manjula91/ReactWorkshop/byte3/geekabyte-workshop/src/logo.svg)
 
 ###### Byte 4
 
