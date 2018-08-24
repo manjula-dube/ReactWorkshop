@@ -224,6 +224,7 @@ Create List.js and show the data on the screen and make sure you add state in th
 
 ###### Byte 13.2
 Create a card component pass data as prop to it and instead li make a card that iterates through the list
+Here's the link to the card [ component ] (https://raw.githubusercontent.com/manjula91/ReactWorkshop/byte13.2/geekabyte-workshop/src/movie-island/Card.js)
 
 In List.js
 
