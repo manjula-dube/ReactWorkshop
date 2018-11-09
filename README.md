@@ -1,14 +1,6 @@
 # ReactWorkshop
 
-We will go branch by branch to see what happening :)
-
-If the api doesn't work (Limit might exceed) we can use the following
-#### now showing
-https://api.myjson.com/bins/nl35k
-
-#### top rated
-https://api.myjson.com/bins/o8nx4
-
+Install [Node](https://nodejs.org/en/download/)
 
 ###### Byte 1
 
@@ -263,5 +255,15 @@ Show more feature. PLEASE IMPLEMENT IT AS HOMEWORK
 ###### Byte 17
 
 Default tab should ne now showing and make and API call on componentDidMount for intial load of now showing data
+
+
+We will go branch by branch to see what happening :)
+
+If the api doesn't work (Limit might exceed) we can use the following
+#### now showing
+https://api.myjson.com/bins/nl35k
+
+#### top rated
+https://api.myjson.com/bins/o8nx4
 
 
