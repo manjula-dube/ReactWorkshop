@@ -18,7 +18,7 @@ Run the script.
 
 ###### Byte 2
 
-* [create-react-app](https://github.com/facebook/create-react-app) will be globally be installed and geekabyte-workshop folder will be create with minimal react boilerplate setup
+* [create-react-app](https://github.com/facebook/create-react-app) will be globally installed and geekabyte-workshop folder will be create with minimal react boilerplate setup
 
 ###### Byte 3 
 
