@@ -1,9 +1,9 @@
 # ReactWorkshop
 
-Install [Node](https://nodejs.org/en/download/)
-Install [Git](https://git-scm.com/download/mac)
+* Install [Node](https://nodejs.org/en/download/)
+* Install [Git](https://git-scm.com/download/mac)
 
-If not its fine we can go ahead with code sandbox :)
+If not, its fine we can go ahead with [codesandbox](https://codesandbox.io/)
 
 ###### Byte 1
 
